@@ -1,0 +1,171 @@
+/* .app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.weather-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+} */
+
+/* General Styles */
+.app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.weather-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info img {
+    width: 80px;
+}
+
+.error {
+    color: red;
+}
+
+.fav-btn {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.fav-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Favorites Section */
+.favorites {
+    margin-top: 20px;
+}
+
+.favorites ul {
+    list-style: none;
+    padding: 0;
+}
+
+.favorites li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.favorites button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.favorites button:hover {
+    background: darkred;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .weather-container {
+    background-color: #333;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.toggle-btn {
+    padding: 10px;
+    background-color: #666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background-color: #444;
+}
+.favorites li span {
+    flex-grow: 1;
+    text-align: left;
+    color: black; /* Default color in light mode */
+  }
+  
+  /* In dark mode, keep the text black */
+  .dark-mode .favorites li span {
+    color: black; 
+  }
+  
