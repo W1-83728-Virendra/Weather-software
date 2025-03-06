@@ -1,76 +1,10 @@
-// import React, { useState } from "react";
-// import axios from "axios";
 
-// const API_KEY = "c37e8f114500b7bc29e9ef219c43cbab"; // Replace with your OpenWeather API key
-// const API_URL = "https://api.openweathermap.org/data/2.5/weather";
-
-// function Weather() {
-//     const [city, setCity] = useState("");
-//     const [weather, setWeather] = useState(null);
-//     const [loading, setLoading] = useState(false);
-//     const [error, setError] = useState("");
-
-//     const fetchWeather = async () => {
-//         if (!city) {
-//             setError("Please enter a city name.");
-//             return;
-//         }
-
-//         setLoading(true);
-//         setError("");
-
-//         try {
-//             const response = await axios.get(`${API_URL}`, {
-//                 params: {
-//                     q: city,
-//                     appid: API_KEY,
-//                     units: "metric",
-//                 },
-//             });
-//             setWeather(response.data);
-//         } catch (err) {
-//             setError("City not found. Please try again.");
-//             setWeather(null);
-//         } finally {
-//             setLoading(false);
-//         }
-//     };
-
-//     return (
-//         <div className="weather-container">
-//             <input
-//                 type="text"
-//                 placeholder="Enter city name"
-//                 value={city}
-//                 onChange={(e) => setCity(e.target.value)}
-//             />
-//             <button onClick={fetchWeather}>Get Weather</button>
-
-//             {loading && <p>Loading...</p>}
-//             {error && <p className="error">{error}</p>}
-
-//             {weather && (
-//                 <div className="weather-info">
-//                     <h2>{weather.name}</h2>
-//                     <p>Temperature: {weather.main.temp}°C</p>
-//                     <p>Condition: {weather.weather[0].description}</p>
-//                     <img
-//                         src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}.png`}
-//                         alt={weather.weather[0].description}
-//                     />
-//                 </div>
-//             )}
-//         </div>
-//     );
-// }
-
-// export default Weather;
 
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_KEY = "c37e8f114500b7bc29e9ef219c43cbab"; // Replace with your OpenWeather API key
+const API_KEY = "c37e8f114500b7bc29e9ef219c43cbab"; 
 const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 function Weather() {
